@@ -37,10 +37,30 @@ public class Labirinto {
         }
         return labirinto;
     }
-    public percorreLabirinto() {
-
+    public boolean percorreLabirinto() throws IllegalArgumentException {
+        if(labirinto == null) throw new IllegalArgumentException();
+        return percorreLabirinto(labirinto, 0, 9);
+        
     }
-    private percorreLabirinto() {
+    private boolean percorreLabirinto(char[][] labirinto, int i, int j) {
+        if (i < 0 || i >= labirinto.length || j < 0 || j >= labirinto[0].length)
+            return false;
+        if (labirinto[i][j] == 'D')
+            return true;
+        if (labirinto[i][j] == 'X' || labirinto[i][j] == '*')
+            return false;
+        labirinto[i][j] = '*';
+        if (percorreLabirinto(labirinto, i + 1, j)) 
+            return true;
+        if (percorreLabirinto(labirinto, i - 1, j))
+            return true;
+        if (percorreLabirinto(labirinto, i, j + 1))
+            return true;
+        if (percorreLabirinto(labirinto, i, j - 1))
+            return true;
+        // Desmarca a posição atual (backtracking)
+        labirinto[i][j] = ' ';
 
+        return false;
     }
 }

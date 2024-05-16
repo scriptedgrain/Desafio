@@ -49,7 +49,9 @@ public class Labirinto {
             return true;
         if (labirinto[i][j] == 'X' || labirinto[i][j] == '*')
             return false;
+        
         labirinto[i][j] = '*';
+
         if (percorreLabirinto(labirinto, i + 1, j)) 
             return true;
         if (percorreLabirinto(labirinto, i - 1, j))
@@ -58,7 +60,7 @@ public class Labirinto {
             return true;
         if (percorreLabirinto(labirinto, i, j - 1))
             return true;
-        // Desmarca a posição atual (backtracking)
+        
         labirinto[i][j] = ' ';
 
         return false;

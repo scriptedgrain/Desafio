@@ -1,18 +1,11 @@
-## Getting Started
+## Desafio proposto pela cadeira Laboratório II - Faculdade
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Etapa 1 - 
 
-## Folder Structure
+Criar um labirinto com o uso de **arquivos**, percorrendo-o através de **recursividade**.
 
-The workspace contains two folders by default, where:
+Etapa 2 - Pesquisa e Ordenação 
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+Inserir candidatos em um array unidimensional, ordená-los por **Seleção Direta** e executar uma **Pesquisa Binária** 
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).

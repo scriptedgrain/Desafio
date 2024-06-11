@@ -10,6 +10,8 @@ Inserir candidatos em um array unidimensional, ordená-los por **Seleção Diret
 
 ### Etapa 3 - Listas Estáticas
 
-Contar elementos em uma **lista estática** a partir de recursividade, além de comparação de elementos entre **pilhas**.
+Contar elementos em uma **Lista Estática** a partir de recursividade, além de comparação de elementos entre **Pilhas**.
 
 ### Etapa 4 - Listas Dinâmicas
+
+Implementação de uma **Pilha Encadeada** e uma **Fila Encadeada**.

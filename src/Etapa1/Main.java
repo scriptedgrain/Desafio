@@ -1,8 +1,10 @@
 package Etapa1;
 public class Main {
     public static void main(String[] args) {
+
+        String filename = "F:\\Usuários\\delta\\Área de Trabalho\\Lucca\\Faculdade ADS\\3°Semestre\\Laboratório II\\Desafio\\Desafio-GR96004-00055-LuccaMaiaRosa\\src\\Etapa1\\Labirinto.txt";
         Labirinto labirinto = new Labirinto();
-        char[][] labirintoArray = labirinto.criaLabirinto();
+        char[][] labirintoArray = labirinto.criaLabirinto(filename);
         boolean percorreCaminho = labirinto.percorreLabirinto();
             
         if (labirintoArray != null) {

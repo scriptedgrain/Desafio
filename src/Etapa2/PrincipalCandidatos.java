@@ -16,6 +16,7 @@ public class PrincipalCandidatos {
         System.out.println("Informe o nome do político: ");
         String politico = sc.next();
         pesquisaBinariaCandidatos(candidatos, politico);
+        
         if(pesquisaBinariaCandidatos(candidatos, politico) == null)
             System.out.println("Político não encontrado! Realizar outra busca");
         else {

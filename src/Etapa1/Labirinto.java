@@ -4,8 +4,8 @@ import java.io.*;
 public class Labirinto {
     private char[][] labirinto;
 
-    public char[][] criaLabirinto() {
-        String filename = "F:\\Usuários\\delta\\Área de Trabalho\\Lucca\\Faculdade ADS\\3°Semestre\\Laboratório II\\Labirinto.txt";
+
+    public char[][] criaLabirinto(String filename) {
         try {
             FileReader fr = new FileReader(filename);
             BufferedReader in = new BufferedReader(fr);
@@ -40,7 +40,7 @@ public class Labirinto {
     }
     public boolean percorreLabirinto() throws IllegalArgumentException {
         if(labirinto == null) throw new IllegalArgumentException();
-        return percorreLabirinto(labirinto, 0, 9);
+        return percorreLabirinto(labirinto, 0, 0);
         
     }
     private boolean percorreLabirinto(char[][] labirinto, int i, int j) {

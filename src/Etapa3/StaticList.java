@@ -104,10 +104,7 @@ public class StaticList<E> implements List<E> {
 	}
 
 	
-	/**
-	 * Retorna uma representação String da lista.
-	 * @see java.lang.Object#toString()
-	 */
+	
 	public String toString() {
 		String s = "";
 		for (int i = 0; i < numElements; i++)
